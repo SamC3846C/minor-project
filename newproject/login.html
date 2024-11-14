@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Automatic Timetable Generator Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <h2>LOGIN</h2>
+        </div>
+        <div class="login-image">
+            <img src="imaa.png" alt="Login Illustration" class="image">
+        </div>
+        <div class="login-form">
+            <h3>WELCOME TO AUTOMATIC TIMETABLE GENERATOR</h3>
+            <form>
+                <div class="radio-buttons">
+                    <input type="radio" id="admin" name="role" value="Admin">
+                    <label for="admin">Admin</label>
+                    <input type="radio" id="student" name="role" value="Student">
+                    <label for="student">Student</label>
+                    <input type="radio" id="teacher" name="role" value="Teacher">
+                    <label for="teacher">Teacher</label>
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="User Name" required>
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="login-button">
+                    <button class="button login__submit" type="submit">
+                        <span class="button__text">LOGIN</span>
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </button>	
+                </div>
+            </form>
+        </div>
+    </div>
+</body>

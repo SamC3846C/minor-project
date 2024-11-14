@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e6f7ff;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 15px 30px;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+nav{
+    margin-right: 100px;
+}
+
+.logo img {
+    width: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sign-in {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    top: 20px;
+    transform: translateX(-70%);
+    transform: translateY(-40%);
+}
+
+.sign-in:hover {
+    background-color: #0056b3;
+}
+
+.hero {
+    text-align: center;
+    position: relative;
+    padding:  0px;
+    background-image: url(new.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero h1 {
+    text-align: left;
+    font-size: 55px;
+    color: rgb(34, 34, 121);
+    padding-top: 20px;
+    transform: translate(9%,90%);
+   
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+    font-weight: bold;
+    color:rgb(22, 22, 106);
+    transform: translate(9%,-600%);
+    text-align: left;
+    
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form input {
+    padding: 10px;
+    width: 500px;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    transform: translate(-66%,-350%);
+    border-radius: 50px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transform: translate(-470%,-415%);
+    border-radius: 50px;
+    height: 45px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+.login-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    padding-top: 20px;
+    background-color: #007bff;
+    
+}
+section{
+    background-color: #007bff;
+}
+
+.login-card {
+    background-color: transparent;
+    padding: 20px;
+    margin: 20px 20px;
+    padding-bottom: 20px;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    width: 315px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.login-card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+.hero i{
+    position: absolute;
+    transform: translate(-610px,-227px);
+    overflow: hidden;
+}
+
+input[type=text]{
+    padding-left: 46px;
+}
+
+footer {
+    background-color: #4FDDFA;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    height: 300px;
+    margin-top: 50px;
+    margin-top: 60px;
+}
+footer img{
+   display: flex;
+   width: 120px;
+   flex-direction: row;
+}
+.footer img{
+    width: 1100px;
+    height: 277px;
+    transform: translate(20%,-50%);
+}
+.login-options img{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50px;
+}
+.hero img{
+    position: relative;
+    display: flex;
+    left: 45%;
+    padding-top: 20px;
+    width: 670px;
+    padding-left: 20px;
+    
+    transform: translateY(-20%);
+    
+    padding-left: 60px;
+    
+    
+
+}
+.ourdaitm img{
+    vertical-align: middle;
+    padding-left: 100px;
+
+}
+.ourdaitm h1{
+    text-align: center;
+    font-size: 70px;
+    padding: 20px;
+    color: #0a3665;
+    
+}
+.lorem h3{
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: #0a3665;
+    font-weight: bold;
+    padding-top: 0px;   
+    
+}
+.loremepsam{
+    background-image: url(nextback.png);
+    height: 675px;    
+}
+.spaceimg{
+    transform: translateX(200px);
+    display: flex;
+    
+}
+.space{
+    height: 50px;
+}
+.loremepsam.img{
+    position: relative;
+    transform: translateX(20%);
+    background: transparent;
+}
+.spacehead{
+   padding-left: 55%;
+   transform: translateY(-125%);
+    
+}
+.spacehead h1{
+    font-size: 90px;
+    color: rgb(33, 33, 122);
+}
+.studentsay{
+    margin-top: 70px;
+}
+.studentsay img{
+    width: 500px;
+}
+.studentsay H1{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a3665;
+}
+.studentsay p{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a3665;
+}
+
