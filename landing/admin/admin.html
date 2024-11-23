@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Welcome Admin</title>
+</head>
+<body>
+    <div class="header">
+        <a href="../../index.html" class="logo">
+            <img src="../../assets/images/headerlogo.jpg" class="logo">
+        </a>
+        <span class="headertext">Welcome Admin!</span>
+    </div>
+    <div class="main">
+        <div class="navbar">
+            <div class="navbuttons">
+                <a href="admin.html" class="navbutton">Dashboard<br></a>
+                <a href="department.html" class="navbutton">Department<br></a>
+                <a href="semester.html" class="navbutton">Semester<br></a>
+                <a href="subject.html" class="navbutton">Subject<br></a>
+                <a href="teacher.html" class="navbutton">Teacher<br></a>
+                <a href="timetable.html" class="navbutton">Time Table</a>
+            </div>
+            <a href="../../index.html" class="signout">
+                <div class="signout">
+                    Sign out
+                    <img src="../../assets/images/svg/signouticon.svg" style="width: 1em;">
+                </div>
+            </a>
+        </div>
+        <span class="mainbody">
+            <span class="maincontent">
+                <span class="maintitle">
+                    Generate Time Table
+                </span>
+                <hr style="width: 50vw;margin-bottom: 5vh;">
+                <span class="departmentspan">
+                    <label for="department">Select Department </label>
+                    <select name="department" class="department" style="margin-left: 8vw;">
+                        <option value="bca">BCA</option>
+                        <option value="bba">BBA</option>
+                        <option value="bbahm">BBA in HM</option>
+                    </select>
+                </span>
+                <hr style="width: 50vw;margin-bottom: 5vh;">
+                <span class="semesterspan">
+                    <label for="semester">Select Semester </label>
+                    <select name="semester" class="semester" style="margin-left: 10vw;">
+                        <option value="1">1st</option>
+                        <option value="3">3rd</option>
+                        <option value="5">5th</option>
+                    </select>
+                </span>
+                <hr style="width: 50vw;margin-bottom: 5vh;">
+                <span class="generatebutton">
+                    Generate Time Table
+                </span>
+            </span>
+            <span class="sideimage">
+                <img src="../../assets/images/backgrounds/adminlanding.avif" style="width: 30vw;">
+            </span>
+        </span>
+    </div>
+</body>
+</html>

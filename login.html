@@ -3,44 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Automatic Timetable Generator Login</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
 </head>
 <body>
-    <div class="login-container">
-        <div class="login-header">
-            <h2>LOGIN</h2>
+    <form action="" method="post">
+        <div class="outerbox">
+            <div class="head">
+                LOGIN
+            </div>
+            <img src="assets/images/loginimg.png" style="width: 15vw;margin-bottom: 3vh;">
+            <div class="middletext">
+                WELCOME TO AUTOMATIC TIMETABLE GENERATOR
+            </div>
+            <div class="radiobuttons">
+                <span class="student">
+                    <input type="radio" class="studentradio" id="studentradio" name="role">
+                    <label for="studentradio">Student</label>
+                </span>
+                <span>
+                    <input type="radio" class="teacherradio" id="teacherradio" name="role">
+                    <label for="teacherradio">Teacher</label>
+                </span>
+                <span>
+                    <input type="radio" class="adminradio" id="adminradio" name="role">
+                    <label for="adminradio">Admin</label>
+                </span>
+            </div>
+            <div class="username">
+                <img src="assets/images/svg/personicon.svg" style="padding-left: 0.3vw;width: 1.5vw;">
+                <input type="text" placeholder="Username" class="usernamefield">
+            </div>
+            <div class="pass">
+                <img src="assets/images/svg/lockicon.svg" style="padding-left: 0.3vw;width: 1.5vw;">
+                <input type="password" placeholder="Password" class="passwordfield">
+            </div>
+            <div class="submitbutton">
+                <input type="submit" value="LOGIN" class="loginbutton">
+                <img src="assets/images/svg/loginicon.svg" style="width: 1.5vw;">
+            </div>
         </div>
-        <div class="login-image">
-            <img src="imaa.png" alt="Login Illustration" class="image">
-        </div>
-        <div class="login-form">
-            <h3>WELCOME TO AUTOMATIC TIMETABLE GENERATOR</h3>
-            <form>
-                <div class="radio-buttons">
-                    <input type="radio" id="admin" name="role" value="Admin">
-                    <label for="admin">Admin</label>
-                    <input type="radio" id="student" name="role" value="Student">
-                    <label for="student">Student</label>
-                    <input type="radio" id="teacher" name="role" value="Teacher">
-                    <label for="teacher">Teacher</label>
-                </div>
-                <div class="input-box">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="User Name" required>
-                </div>
-                <div class="input-box">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Password" required>
-                </div>
-                <div class="login-button">
-                    <button class="button login__submit" type="submit">
-                        <span class="button__text">Log In Now</span>
-                        <i class="fa-solid fa-right-to-bracket"></i>
-                    </button>	
-                </div>
-            </form>
-        </div>
-    </div>
+    </form>
 </body>
+</html>
