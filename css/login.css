@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.outerbox{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-style:groove;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20vw;
+    border-width: 2px;
+}
+.head{
+    margin-top:1vh;
+    background-color: #29D7FA;
+    min-width: 18vw;
+    border-radius: 4px;
+    height: 5vh;
+    font-size: 3vh;
+    font-weight: 600;
+    color: #ffffff;
+    padding-top:0.7vh;
+    margin-bottom: 3vh;
+}
+.middletext{
+    max-width: 16vw;
+    font-weight: 500;
+    font-size: 0.85vw;
+    margin-bottom: 2vh;
+}
+.radiobuttons{
+    display: flex;
+    justify-content: space-between;
+    min-width: 13vw;
+    margin-bottom: 1vh;
+    font-size: 0.85vw;
+    line-height: 3vh;
+}
+.studentradio,.teacherradio,.adminradio{
+    width: 1.6vh;
+    height: 1.6vh;
+    display: inline-flex;
+}
+.username,.pass{
+    border-radius: 8px;
+    border-color: purple;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 1.5vh;
+    width: 18vw;
+    text-align: left;
+    display: flex;
+    padding-top:0.5vh;
+    padding-bottom:0.5vh;
+}
+.usernamefield,.usernamefield:focus,.passwordfield,.passwordfield:focus{
+    border:none;
+    outline:none;
+    padding-left: 0.5vw;
+    background:transparent;
+    width: 15.5vw;
+    font-size:0.85vw;
+}
+.submitbutton{
+    border-radius: 8px;
+    background-color: #0930DE;
+    width: 18vw;
+    margin-bottom: 1.5vh;
+    display: flex;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    align-items: center;
+    justify-content: center;
+}
+.loginbutton{
+    border:none;
+    outline:none;
+    background: transparent;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 1.4vw;
+    padding-right: 0.2vw;
+}

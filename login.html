@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <form action="" method="post">
+        <div class="outerbox">
+            <div class="head">
+                LOGIN
+            </div>
+            <img src="assets/images/loginimg.png" style="width: 15vw;margin-bottom: 3vh;">
+            <div class="middletext">
+                WELCOME TO AUTOMATIC TIMETABLE GENERATOR
+            </div>
+            <div class="radiobuttons">
+                <span class="student">
+                    <input type="radio" class="studentradio" id="studentradio" name="role">
+                    <label for="studentradio">Student</label>
+                </span>
+                <span>
+                    <input type="radio" class="teacherradio" id="teacherradio" name="role">
+                    <label for="teacherradio">Teacher</label>
+                </span>
+                <span>
+                    <input type="radio" class="adminradio" id="adminradio" name="role">
+                    <label for="adminradio">Admin</label>
+                </span>
+            </div>
+            <div class="username">
+                <img src="assets/images/svg/personicon.svg" style="padding-left: 0.3vw;width: 1.5vw;">
+                <input type="text" placeholder="Username" class="usernamefield">
+            </div>
+            <div class="pass">
+                <img src="assets/images/svg/lockicon.svg" style="padding-left: 0.3vw;width: 1.5vw;">
+                <input type="password" placeholder="Password" class="passwordfield">
+            </div>
+            <div class="submitbutton">
+                <input type="submit" value="LOGIN" class="loginbutton">
+                <img src="assets/images/svg/loginicon.svg" style="width: 1.5vw;">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
