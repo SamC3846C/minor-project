@@ -7,7 +7,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="redirect.php" method="post">
+    <form action="redirect.php" method="post" name="loginform">
         <div class="outerbox">
             <div class="head">
                 LOGIN
@@ -38,7 +38,7 @@
                 <img src="assets/images/svg/lockicon.svg" style="padding-left: 0.3vw;width: 1.5vw;">
                 <input type="password" placeholder="Password" class="passwordfield" id="password" name="password">
             </div>
-            <div class="submitbutton">
+            <div class="submitbutton" onclick="document.loginform.submit()">
                 <input type="submit" value="LOGIN" class="loginbutton">
                 <img src="assets/images/svg/loginicon.svg" style="width: 1.5vw;">
             </div>

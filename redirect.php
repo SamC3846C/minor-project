@@ -20,7 +20,7 @@ if (mysqli_num_rows($result) > 0)
     $row = mysqli_fetch_assoc($result);
     if(password_verify($password,$row['password']))
     {
-        header("Location: landing/$role/$role.html");
+        header("Location: landing/$role/");
         die();
     }
     else
