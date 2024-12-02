@@ -7,7 +7,7 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="" method="post">
+    <form action="redirect.php" method="post" name="loginform">
         <div class="outerbox">
             <div class="head">
                 LOGIN
@@ -18,27 +18,27 @@
             </div>
             <div class="radiobuttons">
                 <span class="student">
-                    <input type="radio" class="studentradio" id="studentradio" name="role">
+                    <input type="radio" class="studentradio" id="studentradio" name="role" value="student">
                     <label for="studentradio">Student</label>
                 </span>
                 <span>
-                    <input type="radio" class="teacherradio" id="teacherradio" name="role">
+                    <input type="radio" class="teacherradio" id="teacherradio" name="role" value="teacher">
                     <label for="teacherradio">Teacher</label>
                 </span>
                 <span>
-                    <input type="radio" class="adminradio" id="adminradio" name="role">
+                    <input type="radio" class="adminradio" id="adminradio" name="role" value="admin">
                     <label for="adminradio">Admin</label>
                 </span>
             </div>
             <div class="username">
                 <img src="assets/images/svg/personicon.svg" style="padding-left: 0.3vw;width: 1.5vw;">
-                <input type="text" placeholder="Username" class="usernamefield">
+                <input type="text" placeholder="Username" class="usernamefield" id="username" name="username">
             </div>
             <div class="pass">
                 <img src="assets/images/svg/lockicon.svg" style="padding-left: 0.3vw;width: 1.5vw;">
-                <input type="password" placeholder="Password" class="passwordfield">
+                <input type="password" placeholder="Password" class="passwordfield" id="password" name="password">
             </div>
-            <div class="submitbutton">
+            <div class="submitbutton" onclick="document.loginform.submit()">
                 <input type="submit" value="LOGIN" class="loginbutton">
                 <img src="assets/images/svg/loginicon.svg" style="width: 1.5vw;">
             </div>
