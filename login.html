@@ -18,7 +18,7 @@
             </div>
             <div class="radiobuttons">
                 <span class="student">
-                    <input type="radio" class="studentradio" id="studentradio" name="role" value="student">
+                    <input type="radio" class="studentradio" id="studentradio" name="role" value="student" required>
                     <label for="studentradio">Student</label>
                 </span>
                 <span>
@@ -32,17 +32,38 @@
             </div>
             <div class="username">
                 <img src="assets/images/svg/personicon.svg" style="padding-left: 0.3vw;width: 1.5vw;">
-                <input type="text" placeholder="Username" class="usernamefield" id="username" name="username">
+                <input type="text" placeholder="Username" class="usernamefield" id="username" name="username" required>
             </div>
             <div class="pass">
                 <img src="assets/images/svg/lockicon.svg" style="padding-left: 0.3vw;width: 1.5vw;">
-                <input type="password" placeholder="Password" class="passwordfield" id="password" name="password">
+                <input type="password" placeholder="Password" class="passwordfield" id="password" name="password" required>
             </div>
-            <div class="submitbutton" onclick="document.loginform.submit()">
+            <div class="submitbutton" onclick="validateForm()">
                 <input type="submit" value="LOGIN" class="loginbutton">
                 <img src="assets/images/svg/loginicon.svg" style="width: 1.5vw;">
             </div>
         </div>
     </form>
+    <script>
+    function validateForm() 
+    {
+        if(document.forms["loginform"]["role"].value=="")
+        {
+            alert("Select a Role");
+        }
+        else if(document.forms["loginform"]["username"].value=="")
+        {
+            alert("Username cannot be empty");
+        }
+        else if(document.forms["loginform"]["password"].value=="")
+        {
+            alert("Password cannot be empty");
+        }
+        else
+        {
+            document.loginform.submit();
+        }
+    } 
+    </script>
 </body>
 </html>
